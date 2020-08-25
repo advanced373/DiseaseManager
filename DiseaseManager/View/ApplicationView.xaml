@@ -1,0 +1,22 @@
+﻿<Window x:Class="DiseaseManager.View.ApplicationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiseaseManager.View"
+        xmlns:ff="clr-namespace:DiseaseManager.ViewModel"
+        mc:Ignorable="d"
+        Title="DiseasesManager" Width="850" Height="600" Background="CornflowerBlue" ResizeMode="NoResize">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type ff:LoginViewModel}">
+            <local:LoginView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ff:StartingPageViewModel}">
+            <local:StartingPage/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ff:RegisterViewModel}">
+            <local:RegisterView/>
+        </DataTemplate>
+    </Window.Resources>
+    <ContentControl Content="{Binding CurrentPageViewModel}" />
+</Window>
