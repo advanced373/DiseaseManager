@@ -2,7 +2,7 @@
 
 ## Description
 
-This SPA WPF application was designed to get a statistical analysis for Covid19 situation.
+This SPA WPF application was designed to get a statistical analysis for Covid19 situation. :virus:
 
 ## Packages
 
